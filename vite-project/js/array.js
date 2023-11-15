@@ -53,7 +53,7 @@ const cards = [
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-RmOPHnq-b9tYZn3Nyrrx0kYIhRRpx9YFw&usqp=CAU"
     },
     {
-        name: "Ornage Lemonade",
+        name: "Orange Lemonade",
         price:"4.25",
         inStock:true,
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5qQSBzdYjrvl3eX-eY6vygWFM-2QRdfC3g&usqp=CAU"
