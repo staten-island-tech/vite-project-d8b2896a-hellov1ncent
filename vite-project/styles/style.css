@@ -1,3 +1,21 @@
-body {
-    background-color: red;
+
+:root {
+    --black: #000;
+    --light-blue: #ADD8E6;
+    --dark-blue: #135cc5;
+    --light-red: #FF7276;
+    --dark-red: #dc2626
+
+
+}
+
+
+.hot {
+    --primary: var(--light-red)
+    --secondary: var(--dark-red)
+}
+
+.cold {
+    --primary: var(--light-blue)
+    --secondary: var(--dark-blue)
 }

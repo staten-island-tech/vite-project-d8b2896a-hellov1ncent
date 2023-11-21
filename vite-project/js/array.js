@@ -60,3 +60,4 @@ const cards = [
     },
     
 ]
+export {cards}
