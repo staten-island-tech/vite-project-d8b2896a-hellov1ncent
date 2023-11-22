@@ -1,3 +1,11 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
 
 :root {
     --black: #000;
@@ -11,11 +19,35 @@
 
 
 .hot {
-    --primary: var(--light-red)
+    --primary: var(--light-red);
     --secondary: var(--dark-red)
 }
 
 .cold {
-    --primary: var(--light-blue)
+    --primary: var(--light-blue);
     --secondary: var(--dark-blue)
 }
+
+  .main {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+  
+  
+  .btn,
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    margin: 1rem auto;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10rem;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+  }
