@@ -28,7 +28,7 @@ body,
     --secondary: var(--dark-blue)
 }
 
-  .main {
+.main {
     background-color: var(--primary);
     height: 100vh;
   }
