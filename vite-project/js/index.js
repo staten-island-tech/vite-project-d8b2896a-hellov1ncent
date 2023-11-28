@@ -1,4 +1,4 @@
-document.querySelector(".btn").addEventListener("click", function (){
+document.querySelector(".themebtn").addEventListener("click", function (){
     if (document.body.classList.contains("cold")){
         document.body.classList.add("hot");
         document.body.classList.remove("cold");
@@ -7,39 +7,60 @@ document.querySelector(".btn").addEventListener("click", function (){
         document.body.classList.remove("hot");
     }
 });
-
-import "../styles/style.css"
-
-
-
-
 const DOMSelectors = {
     button: document.querySelectorAll(".btn"),
-    lemonadebtn: document.querySelector('.Original'),
-    fruitbtn: document.querySelector('.fruit'),
-    lemonadebtn: document.querySelector('.SugarFree'),
-    hotbtn: document.querySelector('.hot'),
-    coldbtn:document.querySelector('.cold')
+    lemonadeBtn: document.querySelector('.Original'),
+    fruitBtn: document.querySelector('.Fruit'),
+    sugarBtn: document.querySelector('.SugarFree'),
+    themeBtn: document.querySelector('.themebtn'),
 }
+
+import "../styles/style.css"
+import {cards} from "./array";
+
+
+
 
 
 function clearfields(){
     DOMSelectors.column.innerHTML="";
 }
 
-
 function insertCards(arr){
-    arr.array.forEach(lemonade => {
+    arr.forEach((cards) => {
         DOMSelectors.column.insertAdjacentHTML(
             "beforeend",
             `<div class="card">
                 <h3 class = "name">${cards.name}</h3>
                 <img src="${cards.img}" class="img">
-                <h4>Price: ${cards.price}</h4>
+                <h4>Price: ${cards.price}</h4> 
             </div>`
         )
     });
 }
+
+let initiallemonade = cards.filter((cards)=> cards.type === 'Fruit');
+insertCards(initiallemonade);
+
+DOMSelectors.lemonadeBtn.addEventListener('click', function() {
+    let newArr = cards.filter((card) => card.type === 'Original');
+    clearfields();
+    insertCards(newArr);
+});
+
+DOMSelectors.fruitBtn.addEventListener('click', function() {
+    let newArr = cards.filter((card) => card.type === 'Fruit');
+    clearfields();
+    insertCards(newArr);
+});
+
+DOMSelectors.sugarBtn.addEventListener('click', function() {
+    let newArr = cards.filter((card) => card.type === 'Sugarfree');
+    clearfields();
+    insertCards(newArr);
+});
+
+
 
 
 
