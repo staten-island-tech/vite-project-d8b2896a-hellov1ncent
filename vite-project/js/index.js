@@ -22,7 +22,6 @@ const DOMSelectors = {
     fruitBtn: document.querySelector('.Fruit'),
     themeBtn: document.querySelector('.themebtn'),
     stockBtn: document.querySelector('.Stock'),
-    allBtn: document.querySelector('.All'),
 }
 
 
