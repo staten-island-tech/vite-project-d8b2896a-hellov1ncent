@@ -22,6 +22,7 @@ const DOMSelectors = {
     fruitBtn: document.querySelector('.Fruit'),
     themeBtn: document.querySelector('.themebtn'),
     stockBtn: document.querySelector('.Stock'),
+    allBtn: document.querySelector('.All'),
 }
 
 
@@ -43,8 +44,6 @@ function insertCards(arr){
     });
 }
 
-let initiallemonade = cards.filter((cards)=> cards.type === 'Fruit');
-insertCards(initiallemonade);
 
 DOMSelectors.lemonadeBtn.addEventListener('click', function() {
     let newArr = cards.filter((card) => card.type === 'Original');
@@ -62,6 +61,15 @@ DOMSelectors.stockBtn.addEventListener('click', function() {
     clearfields();
     insertCards(newArr);
 });
+
+DOMSelectors.stockBtn.addEventListener('click', function() {
+    clearfields();
+    insertCards(cards);
+});
+
+insertCards(cards)
+
+
 
 
 

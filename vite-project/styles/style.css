@@ -28,7 +28,7 @@ height: 50%;
 width: 80%;
 border:2.5px solid #000;
 }
-.Original, .Fruit, .Stock, .themebtn {
+.Original, .Fruit, .Stock, .themebtn, .All {
   background-color: white;
     border-radius: 2px;
     border-color: black;
