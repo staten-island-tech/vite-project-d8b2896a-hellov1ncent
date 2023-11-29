@@ -20,8 +20,8 @@ const DOMSelectors = {
     button: document.querySelectorAll(".btn"),
     lemonadeBtn: document.querySelector('.Original'),
     fruitBtn: document.querySelector('.Fruit'),
-    sugarBtn: document.querySelector('.SugarFree'),
     themeBtn: document.querySelector('.themebtn'),
+    stockBtn: document.querySelector('.Stock'),
 }
 
 
@@ -57,12 +57,12 @@ DOMSelectors.fruitBtn.addEventListener('click', function() {
     clearfields();
     insertCards(newArr);
 });
-
-DOMSelectors.sugarBtn.addEventListener('click', function() {
-    let newArr = cards.filter((card) => card.type === 'SugarFree');
+DOMSelectors.stockBtn.addEventListener('click', function() {
+    let newArr = cards.filter((card) => card.inStock === 'true');
     clearfields();
     insertCards(newArr);
 });
+
 
 
 
