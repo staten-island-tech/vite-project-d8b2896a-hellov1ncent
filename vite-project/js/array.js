@@ -36,7 +36,7 @@ const cards = [
     {
         name: "Sugar Free Lemonade",
         price:"3.25",
-        type:"Original",
+        type:"Sugarfree",
         inStock:true,
         img: "https://skinnycomfort.com/wp-content/uploads/2020/04/Sugar-Free-Lemonade-15.jpg"
     },
@@ -70,4 +70,4 @@ const cards = [
     },
     
 ]
-export {cards}
+export {cards};
