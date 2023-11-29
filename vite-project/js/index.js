@@ -1,3 +1,11 @@
+
+import "../styles/style.css";
+import {cards} from "../js/array.js";
+
+
+
+
+
 document.querySelector(".themebtn").addEventListener("click", function (){
     if (document.body.classList.contains("cold")){
         document.body.classList.add("hot");
@@ -8,17 +16,13 @@ document.querySelector(".themebtn").addEventListener("click", function (){
     }
 });
 const DOMSelectors = {
+    column: document.querySelector(".column"),
     button: document.querySelectorAll(".btn"),
     lemonadeBtn: document.querySelector('.Original'),
     fruitBtn: document.querySelector('.Fruit'),
     sugarBtn: document.querySelector('.SugarFree'),
     themeBtn: document.querySelector('.themebtn'),
 }
-
-import "../styles/style.css"
-import {cards} from "./array";
-
-
 
 
 
@@ -55,12 +59,10 @@ DOMSelectors.fruitBtn.addEventListener('click', function() {
 });
 
 DOMSelectors.sugarBtn.addEventListener('click', function() {
-    let newArr = cards.filter((card) => card.type === 'Sugarfree');
+    let newArr = cards.filter((card) => card.type === 'SugarFree');
     clearfields();
     insertCards(newArr);
 });
-
-
 
 
 

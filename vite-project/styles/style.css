@@ -1,22 +1,3 @@
-html,
-body,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-:root {
-    --black: #000;
-    --light-blue: #ADD8E6;
-    --dark-blue: #135cc5;
-    --light-red: #FF7276;
-    --dark-red: #dc2626
-
-
-}
-
 .column {
   display:flex;
   width: 90%;
@@ -25,65 +6,61 @@ body,
   justify-content: space-around;
   margin: 10rem auto;
 }
+
 .card {
   height: 40vh;
   width: 30vw;
-  border:5px solid #000;
+  border:3px solid #000;
   margin: 10px;
-      background-color: white;
       display:flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
       border-radius: 20px;
-      box-shadow: 25px 5px 25px black;
+      box-shadow: 3px 3px 3px black;
       font-size: large;
   }
-  .img 
-  {
-  flex-wrap: wrap;
-  align-items: center;
-  height: 50%;
-  width: 80%;
-  border:2.5px solid #000;
-  }
+
+.img 
+{
+flex-wrap: wrap;
+align-items: center;
+height: 50%;
+width: 80%;
+border:2.5px solid #000;
+}
+
+:root {
+  --blue: #ADD8E6;
+  --red:#ffb3b2;
+  --primary: var(--white);
+  --h1: 7.5rem;
+  --h2: 5rem;
+  --h3: 2.25rem;
+}
 .hot {
-    --primary: var(--light-red);
-    --secondary: var(--dark-red)
+  --primary: var(--blue);
 }
 
 .cold {
-    --primary: var(--light-blue);
-    --secondary: var(--dark-blue)
+  --primary: var(--red);
 }
 
-.main {
-    background-color: var(--primary);
-    height: 100vh;
-  }
-  
-  
-  .btn,
-  .btn:link,
-  .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    margin: 1rem auto;
-    font-size: 2rem;
-    border: none;
-    border-radius: 10rem;
-    transition: all 0.2s;
-  }
-  .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
-  }
+body {
+  background-color: var(--primary);
+}
 
-  .Original, .Fruit, .Sugarfree, .themebtn {
-    background-color: #ADD8E6;
-      border-radius: 2px;
-      border-color: #3b444b;
-      font-size: 2rem;
-  }
+
+
+.btn, 
+.btn:link,
+.btn:visited {
+  border-radius: 5rem;
+}
+
+.Original, .Fruit, .SugarFree, .themebtn {
+  background-color: white;
+    border-radius: 2px;
+    border-color: black;
+    font-size: 2rem;
+}
