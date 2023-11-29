@@ -10,15 +10,14 @@
 .card {
   height: 55vh;
   width: 23vw;
-  border:3px solid #000;
+  border:2.5px solid #000;
   margin: 10px;
       display:flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
       border-radius: 20px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      font-size: large;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
 .img 
@@ -44,7 +43,6 @@ border:2.5px solid #000;
   --primary: var(--white);
   --h1: 7.5rem;
   --h2: 5rem;
-  --h3: 2.25rem;
 }
 .hot {
   --primary: var(--blue);
