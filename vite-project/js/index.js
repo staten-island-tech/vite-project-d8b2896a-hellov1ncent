@@ -22,7 +22,7 @@ const DOMSelectors = {
     fruitBtn: document.querySelector('.Fruit'),
     themeBtn: document.querySelector('.themebtn'),
     stockBtn: document.querySelector('.Stock'),
-    allBt
+  /*   allBtn: document.querySelector('.All'), */
 }
 
 
