@@ -44,6 +44,10 @@ function insertCards(arr){
     });
 }
 
+/* 
+let initiallemonade = cards.filter((cards)=> cards.type === 'Fruit');
+insertCards(initiallemonade);
+ */
 
 DOMSelectors.lemonadeBtn.addEventListener('click', function() {
     let newArr = cards.filter((card) => card.type === 'Original');
