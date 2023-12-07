@@ -15,6 +15,16 @@ document.querySelector(".themebtn").addEventListener("click", function (){
         document.body.classList.remove("hot");
     }
 });
+/* const DOMSelectors = {
+    button: document.querySelectorAll(".btn"),
+    lemonadebtn: document.querySelector('.Original'),
+    fruitbtn: document.querySelector('.fruit'),
+    lemonadebtn: document.querySelector('.SugarFree'),
+    hotbtn: document.querySelector('.hot'),
+    coldbtn:document.querySelector('.cold')
+}
+ */
+
 const DOMSelectors = {
     column: document.querySelector(".column"),
     button: document.querySelectorAll(".btn"),
@@ -30,8 +40,8 @@ const DOMSelectors = {
 function clearfields(){
     DOMSelectors.column.innerHTML="";
 }
-
 function insertCards(arr){
+/*     arr.array.forEach(lemonade => { */
     arr.forEach((cards) => {
         DOMSelectors.column.insertAdjacentHTML(
             "beforeend",
